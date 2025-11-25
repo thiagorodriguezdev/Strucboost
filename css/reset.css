@@ -25,3 +25,8 @@ html {
   color: var(--gray-100);
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
