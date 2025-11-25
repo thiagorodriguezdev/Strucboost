@@ -24,16 +24,48 @@
 }
 
 .btn-primary.lg.white:hover {
-  background-color: var(--gray-300); 
+  background-color: var(--gray-300);
 }
-.s-digital-card {
-  width: 100%;
+
+.item-digital {
+  flex: 1;
   max-width: 38.4rem;
 }
 
-.s-digital-card p {
+.item-digital .icon {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.item-digital .info h6 {
+  margin-bottom: 0.8rem;
+}
+
+.item-digital .info p {
   color: var(--gray-600);
-  font-size: 1.8rem;
   line-height: 150%;
-  letter-spacing: -0.054rem;
+  letter-spacing: -0.54px;
+}
+
+.card-post {
+  border: 0.2rem solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  padding: 2.4rem;
+}
+
+.card-post .tag {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: 0.126rem;
+  padding: 0.8rem 2.2rem;
+  border-radius: 10rem;
+  background: rgba(255, 255, 255, 0.1);
+  display: inline-block;
 }
