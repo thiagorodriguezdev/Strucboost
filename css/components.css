@@ -68,4 +68,26 @@
   border-radius: 10rem;
   background: rgba(255, 255, 255, 0.1);
   display: inline-block;
+  margin-bottom: 4.5rem;
+}
+
+.card-post .image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6.4rem;
+}
+
+.card-post .text {
+  max-width: 48.2rem;
+  width: 100% ;
+}
+
+.card-post .text p {
+  margin-top: 0.8rem;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.48px;
+  color: var(--gray-600);
 }
