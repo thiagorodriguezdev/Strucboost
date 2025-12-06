@@ -1,9 +1,9 @@
 header {
   width: 100%;
   height: 8.8rem;
-  display: flex; 
+  display: flex;
   align-items: center;
-  border-bottom: .1rem solid #59595B;
+  border-bottom: 0.1rem solid var(--gray-800);
 }
 
 header .container {
@@ -29,7 +29,7 @@ header nav ul li a {
   font-size: 1.6rem;
   color: var(--gray-100);
   letter-spacing: -0.48;
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
@@ -102,4 +102,72 @@ header nav ul li a:hover {
 
 .s-hero .ilustra {
   padding: 0 1.5rem;
+}
+
+.s-digital h3 {
+  width: 100%;
+  max-width: 53.5rem;
+  margin: 12.8rem auto 6.4rem;
+  text-align: center;
+}
+
+.s-digital ul {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--gray-800);
+  padding-bottom: 12.8rem;
+}
+
+.s-arte {
+  width: 100%;
+  padding-top: 12.8rem;
+}
+
+.s-arte .text-arte {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 6.4rem;
+}
+
+.s-arte .text-arte .left {
+  max-width: 53.7rem;
+}
+
+.s-arte .text-arte .left h3 {
+  line-height: 1.2;
+  letter-spacing: -1.2;
+  margin-bottom: 1.6rem;
+}
+
+.s-arte .text-arte .left p {
+  max-width: 45.2rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -0.54;
+  color: var(--gray-600);
+  text-align: justify;
+}
+
+.s-arte .text-arte .right {
+  max-width: 42.9rem;
+}
+
+.s-arte .text-arte .right p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -0.54;
+  color: var(--gray-600);
+  text-align: justify;
+}
+
+.s-arte .card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 3.2rem;
+}
+
+.s-arte .card .card-post:first-child {
+  grid-column: span 2;
 }
