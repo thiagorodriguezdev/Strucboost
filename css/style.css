@@ -334,7 +334,11 @@ footer .copy a:hover {
   .s-hero {
     padding-top: 8.8rem;
   }
-  .s-hero h1 {
-    font-size: 4rem;
+  .s-hero .text h1 {
+    font-size: 3.2rem;
+    margin-bottom: 1.4rem;
+  }
+  .s-hero .arrow {
+    display: none;
   }
 }
