@@ -12,6 +12,10 @@ header .container {
   align-items: center;
 }
 
+header .btn-mobile {
+  display: none;
+}
+
 header nav {
   display: flex;
   align-items: center;
@@ -111,14 +115,19 @@ header nav ul li a:hover {
   text-align: center;
 }
 
+.s-digital {
+  display: none;
+  padding-bottom: 12.8rem;
+}
+
 .s-digital ul {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--gray-800);
-  padding-bottom: 12.8rem;
 }
 
 .s-arte {
+  display: none;
   width: 100%;
   padding-top: 12.8rem;
 }
@@ -173,31 +182,33 @@ header nav ul li a:hover {
 }
 
 .s-newsletter {
-  width: 100%;
+  display: none;
+  padding: 9rem 0;
   margin-top: 12.8rem;
-  padding: 9rem 1.5rem;
   background: var(--pink-10);
+}
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.s-newsletter .container {
   text-align: center;
 }
 
 .s-newsletter h2 {
   max-width: 64.6rem;
+  margin: 0 auto;
+  font-weight: 600;
   letter-spacing: -0.144rem;
   margin-bottom: 1.6rem;
 }
 
 .s-newsletter p {
   max-width: 68.7rem;
-  letter-spacing: -0.066rem;
+  margin: 0 auto;
   font-size: 2.2rem;
   margin-bottom: 2.4rem;
 }
 
 footer {
+  display: none;
   padding: 4.8rem 0;
 }
 
@@ -265,9 +276,65 @@ footer .copy {
 footer .copy a {
   color: var(--color-gray-600, #787c87);
   font-weight: 600;
-  transition: color .3s ease;
+  transition: color 0.3s ease;
 }
 
 footer .copy a:hover {
   color: var(--gray-100);
+}
+
+/* monitores pequenos */
+@media (max-width: 1200px) {
+}
+
+/* tablet */
+@media (max-width: 991px) {
+  .s-hero::after {
+    height: 13rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  header .btn-mobile {
+    display: block;
+  }
+  .s-hero {
+    padding-top: 6rem;
+  }
+  .s-hero h1 {
+    max-width: 49rem;
+    margin: 0 auto;
+  }
+  .s-hero .text h1::before {
+    bottom: -0.8rem;
+    left: 0;
+    background-size: 100%;
+  }
+  .s-hero .text p {
+    max-width: 39.6rem;
+  }
+  .s-hero .arrow {
+    bottom: 3.5rem;
+    left: 2rem;
+    max-width: 6rem;
+  }
+}
+
+/* mobile */
+@media (max-width: 560px) {
+  header {
+    height: 7.2rem;
+  }
+  header .logo {
+    max-width: 16rem;
+  }
+  .s-hero {
+    padding-top: 8.8rem;
+  }
+  .s-hero h1 {
+    font-size: 4rem;
+  }
 }
