@@ -320,12 +320,36 @@ footer .copy a:hover {
     flex-direction: column;
     align-items: center;
   }
+  .s-arte .text-arte .left {
+    max-width: 100%;
+    text-align: center;
+  }
+  .s-arte .text-arte .left p {
+    max-width: 100%;
+    text-align: center;
+  }
+  .s-arte .text-arte .right {
+    max-width: 100%;
+    margin-top: 1.6rem;
+    text-align: center;
+  }
+  .s-arte .text-arte .right p {
+    text-align: center;
+  }
+
   .s-hero::after {
     height: 13rem;
   }
   .s-digital ul {
     flex-direction: column;
     align-items: center;
+  }
+  .s-arte .card {
+    grid-template-columns: 1fr;
+  }
+  .s-arte .card .card-post:first-child,
+  .s-arte .card .card-post:nth-child(2) {
+    grid-column: initial;
   }
 }
 
@@ -360,6 +384,15 @@ footer .copy a:hover {
 
 /* mobile */
 @media (max-width: 560px) {
+  .s-arte .text-arte .left h3 {
+    font-size: 2.6rem;
+  }
+  .s-arte .text-arte .left p {
+    font-size: 1.6rem;
+  }
+  .s-arte .text-arte .right p {
+    font-size: 1.6rem;
+  }
   header {
     height: 7.2rem;
   }
@@ -384,5 +417,15 @@ footer .copy a:hover {
   }
   .s-hero::after {
     height: 22rem;
+  }
+  .card-post .image {
+    max-width: 11.5rem;
+    margin: 0 auto;
+  }
+  .card-post .text h6 {
+    font-size: 1.8rem;
+  }
+  .card-post .text p {
+    font-size: 1.4rem;
   }
 }
