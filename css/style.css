@@ -130,9 +130,7 @@ header nav ul li a:hover {
 }
 
 .s-arte {
-  display: none;
   width: 100%;
-  padding-top: 12.8rem;
 }
 
 .s-arte .text-arte {
@@ -288,6 +286,9 @@ footer .copy a:hover {
 
 /* monitores pequenos */
 @media (max-width: 1200px) {
+  .s-digital {
+    padding-bottom: 6.8rem;
+  }
   .s-digital h3 {
     margin: 6.8rem auto 6.4rem;
   }
@@ -301,10 +302,24 @@ footer .copy a:hover {
   .item-digital .info h6 {
     font-size: 2rem;
   }
+  .s-arte .card {
+    gap: 1.6rem;
+  }
+  .s-arte .card .card-post:first-child,
+  .s-arte .card .card-post:nth-child(2) {
+    grid-column: span 3;
+  }
+  .s-arte {
+    padding: 0;
+  }
 }
 
 /* tablet */
 @media (max-width: 991px) {
+  .s-arte .text-arte {
+    flex-direction: column;
+    align-items: center;
+  }
   .s-hero::after {
     height: 13rem;
   }
