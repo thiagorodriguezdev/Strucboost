@@ -450,9 +450,6 @@ footer .copy a:hover {
   .s-newsletter p {
     font-size: 1.6rem;
   }
-  footer .s-footer {
-    padding-bottom: 2.6rem;
-  }
 
   footer .s-footer .s-footer-right {
     flex-direction: column;
@@ -474,6 +471,9 @@ footer .copy a:hover {
     justify-content: space-between;
   }
   footer .copy {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+  }
+  footer .s-footer .s-footer-right .footer-list ul li:not(:last-child) {
+    margin: 0;
   }
 }
