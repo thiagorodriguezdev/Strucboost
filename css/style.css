@@ -208,7 +208,6 @@ header nav ul li a:hover {
 }
 
 footer {
-  display: none;
   padding: 4.8rem 0;
 }
 
@@ -311,6 +310,9 @@ footer .copy a:hover {
   .s-arte {
     padding: 0;
   }
+  footer .s-footer .s-footer-right {
+    max-width: 66rem;
+  }
 }
 
 /* tablet */
@@ -318,10 +320,6 @@ footer .copy a:hover {
   .s-arte .text-arte {
     flex-direction: column;
     align-items: center;
-  }
-  .s-arte .text-arte .left {
-    max-width: 100%;
-    text-align: center;
   }
   .s-arte .text-arte .left p {
     max-width: 100%;
@@ -350,6 +348,23 @@ footer .copy a:hover {
   .s-arte .card .card-post:nth-child(2) {
     grid-column: initial;
   }
+  footer .s-footer {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  footer .s-footer .s-footer-left {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  footer .s-footer .s-footer-left img {
+    margin: 0 auto;
+  }
+  footer .s-footer .s-footer-right {
+    max-width: 100%;
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 768px) {
