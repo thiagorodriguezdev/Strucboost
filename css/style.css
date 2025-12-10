@@ -364,7 +364,6 @@ footer .copy a:hover {
     max-width: 100%;
     width: 100%;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -450,5 +449,31 @@ footer .copy a:hover {
   }
   .s-newsletter p {
     font-size: 1.6rem;
+  }
+  footer .s-footer {
+    padding-bottom: 2.6rem;
+  }
+
+  footer .s-footer .s-footer-right {
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+  }
+  footer .s-footer .s-footer-right .footer-list h6 {
+    text-align: center;
+  }
+  footer .s-footer .s-footer-right .footer-list ul li a {
+    justify-content: center;
+  }
+  footer .s-footer .s-footer-right .footer-list:last-child {
+    width: 100%;
+  }
+  footer .s-footer .s-footer-right .footer-list:last-child ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  footer .copy {
+    font-size: 1.2rem;
   }
 }
