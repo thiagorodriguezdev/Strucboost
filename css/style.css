@@ -183,7 +183,6 @@ header nav ul li a:hover {
 }
 
 .s-newsletter {
-  display: none;
   padding: 9rem 0;
   margin-top: 12.8rem;
   background: var(--pink-10);
@@ -426,6 +425,15 @@ footer .copy a:hover {
     font-size: 1.8rem;
   }
   .card-post .text p {
-    font-size: 1.4rem;
+    font-size: 1.4 rem;
+  }
+  .s-arte .card {
+    gap: 3.2rem;
+  }
+  .s-newsletter h2 {
+    font-size: 3rem;
+  }
+  .s-newsletter p {
+    font-size: 1.6rem;
   }
 }
