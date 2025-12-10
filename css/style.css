@@ -473,7 +473,7 @@ footer .copy a:hover {
   footer .copy {
     font-size: 1.4rem;
   }
-  footer .s-footer .s-footer-right .footer-list ul li:not(:last-child) {
+  footer .s-footer .s-footer-right .footer-list:last-child ul li:not(:last-child) {
     margin: 0;
   }
 }
