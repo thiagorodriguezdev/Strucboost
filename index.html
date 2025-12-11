@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Structboost</title>
   <link rel="shortcut icon" href="./img/img-post.svg" type="image/svg">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/components.css">
   <link rel="stylesheet" href="./css/grid.css">
@@ -41,7 +42,7 @@
 
   <section class="s-hero">
     <div class="container">
-      <div class="text">
+      <div class="text" data-aos="fade-right">
         <h1>¡Interfaz sencilla y directa!</h1>
         <p>Aprenda a desarrollar interfaces modernas y de alta calidad con alguien que trabaja en el campo en proyectos de gran reconocimiento.</p>
         <button class="btn-primary lg">
@@ -50,13 +51,13 @@
         <img class="arrow" src="./img/arrow.svg" alt="">
       </div>
     </div>
-    <img src="./img/ilustra-desktop.svg" class="ilustra" alt=""> 
-    <img src="./img/ilustra-mobile.svg" class="ilustra-mobile" alt="">
+    <img src="./img/ilustra-desktop.svg" class="ilustra" alt="" data-aos="fade-up" data-aos-delay="200">
+    <img src="./img/ilustra-mobile.svg" class="ilustra-mobile" alt="" data-aos="fade-up">
   </section>
 
   <section class="s-digital">
     <div class="container">
-      <h3>¡Transformando ideas en realidad digital!</h3>
+      <h3 data-aos="fade-right">¡Transformando ideas en realidad digital!</h3>
       <ul>
         <li>
           <div class="item-digital">
@@ -65,7 +66,7 @@
             </div>
             <div class="info">
               <h6>Impacto visual imbatible</h6>
-              <p>Domine el arte de crear interfaces  atractivas que ganen los corazones y las mentes de los usuarios.</p>
+              <p>Domine el arte de crear interfaces atractivas que ganen los corazones y las mentes de los usuarios.</p>
             </div>
           </div>
         </li>
@@ -76,7 +77,7 @@
             </div>
             <div class="info">
               <h6>Navegación ilimitada</h6>
-              <p>Construir una base sólida para una  experiencia de usuario fluida e  intuitiva, garantizando la satisfacción  de la audiencia.</p>
+              <p>Construir una base sólida para una experiencia de usuario fluida e intuitiva, garantizando la satisfacción de la audiencia.</p>
             </div>
           </div>
         </li>
@@ -240,6 +241,14 @@
       <p class="copy">2025 © Todos os direitos reservados. <a href="https://codeboost.com.br/" target="_blank" rel="noopener noreferrer">Codeboost</a></p>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000
+    });
+  </script>
 </body>
 
 </html>
