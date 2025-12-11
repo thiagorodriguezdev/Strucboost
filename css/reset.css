@@ -25,6 +25,10 @@ html {
   color: var(--gray-100);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 button {
   background-color: transparent;
   border: none;
