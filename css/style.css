@@ -109,8 +109,22 @@ header nav ul li a:hover {
 
 .s-hero .arrow {
   position: absolute;
-  bottom: 1.5rem;
+  bottom: 1rem;
   left: 3rem;
+  animation: floating 2s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 .s-hero .ilustra {
