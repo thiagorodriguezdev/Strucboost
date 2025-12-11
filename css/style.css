@@ -80,12 +80,21 @@ header nav ul li a:hover {
   content: "";
   display: block;
   position: absolute;
-  width: 100%;
   max-width: 59.9rem;
   height: 2.2rem;
-  background: url(../img/line-title.svg) no-repeat center center;
+  background: url(../img/line-title.svg) no-repeat left center;
   bottom: 0;
   left: 3.9rem;
+  animation: drawLine 1s ease-in forwards;
+}
+
+@keyframes drawLine {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .s-hero .text p {
